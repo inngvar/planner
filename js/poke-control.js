@@ -3,7 +3,7 @@
  * Предоставляет меню в которо можно выбрать, канал, и название квеста
  */
 /*global define*/
-define(['jquery'], function ($) {
+define(['jquery', './lib/channel-generator', './lib/servername-provider'], function ($, channelGenerator, servernameProvider) {
 
     'use strict';
 
@@ -11,7 +11,13 @@ define(['jquery'], function ($) {
     initialize = function (settings) {
         var $container = $(settings.selector),
             $temlateContext = $(settings.template);
-        $('#bdoChannel', $temlateContext).append('<option value="media1">Медия 1</option>');
+        $.each(servernameProvider.getServerNames(), function (index, name) {
+            $.each(channelGenerator.getChannelsForName(name), function (index, channelName) {
+                var option = '<option value="' + channelName + '">' + channelName + '</option>';
+                $('#bdoChannel', $temlateContext).append(option);
+            });
+
+        });
         $container.append($temlateContext);
     };
 

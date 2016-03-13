@@ -12,7 +12,7 @@ define(['./poke-control', './poke-history', 'jquery'], function (pokeControl, po
                 template: '<form class="form-inline"><div class="form-group"><label for="bdoChannel">Канал:</label><select name="bdoChannel" id="bdoChannel"></select></div><div class="form-group"><label for="bdoQuest">Квест</label><select name="bdoQuest" id="bdoQuest"></select></div><button>Отправить</button></form>'
             },
             pokeHistory: {
-                selector: 'poke-history-container'
+                selector: '.poke-history-container'
             }
         },
         create;
