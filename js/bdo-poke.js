@@ -9,10 +9,12 @@ define(['./poke-control', './poke-history', 'jquery'], function (pokeControl, po
     var pokeSettings = {
             pokeControl: {
                 selector: '.poke-control-container',
-                template: '<form class="form-inline"><div class="form-group"><label for="bdoChannel">Канал:</label><select name="bdoChannel" id="bdoChannel"></select></div><div class="form-group"><label for="bdoQuest">Квест</label><select name="bdoQuest" id="bdoQuest"></select></div><button>Отправить</button></form>'
+                template: '<form class="form"><div class="form-group"><label for="bdoChannel">Канал:</label><select class="form-control" name="bdoChannel" id="bdoChannel"></select></div><div class="form-group"><label for="bdoQuest">Квест:</label><select class="form-control" name="bdoQuest" id="bdoQuest"></select></div><button class="btn btn-success">Отправить</button></form>'
             },
             pokeHistory: {
-                selector: '.poke-history-container'
+                selector: '.poke-history-container',
+                template: '<table id="eventsHistory" class="table table-condensed table-hover table-striped"><thead><tr><th data-column-id="startDate">Начало</th><th data-column-id="channel" data-type="numeric">Канал</th><th data-column-id="event">Событие</th></tr></thead></table>',
+                tableSelector: '#eventsHistory'
             }
         },
         create;

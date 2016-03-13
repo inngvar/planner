@@ -23,8 +23,7 @@ require.config({
         bootstrap: '../bower_components/bootstrap/dist/js/bootstrap',
         domReady: '../bower_components/domReady/domReady',
         'jquery.bootgrid': '../bower_components/jquery.bootgrid/dist/jquery.bootgrid',
-        'jquery-mockjax': '../bower_components/jquery-mockjax/dist/jquery.mockjax',
-        'mock-http-request': '../bower_components/mock-http-request/js/mock'
+        'jquery-mockjax': '../bower_components/jquery-mockjax/dist/jquery.mockjax'
     },
     packages: [
 

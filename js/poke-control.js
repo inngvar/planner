@@ -3,7 +3,7 @@
  * Предоставляет меню в которо можно выбрать, канал, и название квеста
  */
 /*global define*/
-define(['jquery', './lib/channel-generator', './lib/servername-provider'], function ($, channelGenerator, servernameProvider) {
+define(['jquery', './lib/channel-generator', './lib/servername-provider', './lib/questname-provider'], function ($, channelGenerator, servernameProvider, questnameProvider) {
 
     'use strict';
 
@@ -17,6 +17,10 @@ define(['jquery', './lib/channel-generator', './lib/servername-provider'], funct
                 $('#bdoChannel', $temlateContext).append(option);
             });
 
+        });
+        $.each(questnameProvider.getQuestList(), function (index, quest) {
+            var option = '<option value="' + quest + '">' + quest + '</option>';
+            $("#bdoQuest", $temlateContext).append(option);
         });
         $container.append($temlateContext);
     };
