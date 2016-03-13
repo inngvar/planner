@@ -1,0 +1,25 @@
+{
+	"name": "inq-info",
+	"description": "Poke and watch current quests",
+	"private": true,
+	"dependencies": {
+		"bootstrap": "latest",		
+		"jquery": "latest",
+        "jquery.bootgrid": "latest",
+        "domReady": "latest"
+	},
+	"devDependencies": {
+		"r.js": "latest",
+		"jquery-mockjax": "latest",
+        "requirejs": "latest",
+		"handlebars": "latest"
+	},
+	"overrides": {
+		"bootstrap": {
+			"main": ["./dist/css/bootstrap.css"]
+		},
+		"ionrangeslider": {
+			"main": ["js/ion.rangeSlider.js", "css/ion.rangeSlider.css", "css/ion.rangeSlider.skinModern.css", "img/sprite-skin-modern.png"]
+		}
+	}
+}
