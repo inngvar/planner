@@ -10,6 +10,9 @@ require.config({
         ],
         bootstrap: [
             'jquery'
+        ],
+        'jquery.bootgrid': [
+            'bootstrap'
         ]
     },
     map: {
