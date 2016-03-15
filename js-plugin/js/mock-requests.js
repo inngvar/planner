@@ -18,22 +18,22 @@ define(['jquery', 'jquery-mockjax'], function ($) {
                 {
                     "channel": "Кальфеон-1",
                     "event": "Камни",
-                    "startdate": "2014-05-30T22:15:00"
+                    "startDate": "2014-05-30T22:15:00"
                 },
                 {
                     "channel": "Кальфеон-2",
                     "event": "Дерево",
-                    "startdate": "2014-04-30T20:15:00"
+                    "startDate": "2014-04-30T20:15:00"
                 },
                 {
                     "channel": "Кальфеон-2",
                     "event": "Дерево",
-                    "startdate": "2014-03-30T20:15:00"
+                    "startDate": "2014-03-30T20:15:00"
                 },
                 {
                     "channel": "Кальфеон-2",
                     "event": "Дерево",
-                    "startdate": "2014-02-30T20:15:00"
+                    "startDate": "2014-02-30T20:15:00"
                 }
 
             ],
